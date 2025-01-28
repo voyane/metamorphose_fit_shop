@@ -1,0 +1,40 @@
+/*
+Mine Shaft
+#222020
+Di Serria
+#e19467
+Astral
+#3277a9
+Glacier
+#71a1c1
+Black
+#050505
+Westar
+#dfdcd9
+Friar Gray
+#7c7c76
+Boulder
+#797474
+Iron
+#d0d5d5
+Blue Dianne
+#274b57
+Storm Dust
+#5f605d
+Willow Grove
+#6b6e69
+
+#d0d5d5#274b57 #5f605d   #6b6e69
+*/
+
+/*Selector universal*/
+*{
+    margin: 0; /*margin é usado para definir o espaçamento externo entre um elemento e os elementos vizinhos*/
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #7c7c76;
+    font-family: 'Times New Roman', Times, serif;
+}
