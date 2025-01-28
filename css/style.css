@@ -69,10 +69,10 @@ body{
 
 .btn-gradiente{
     padding: 10px 25px;
-    color: var(--astral);
+    color: var(--preta);
     border: none;
     cursor: pointer;
-    background-image: var(--black);
+    background-image: var(--di-serria);
 }
 
 /*Classes do site*/
@@ -100,4 +100,37 @@ nav{
 
 .ul li a{
     color: var(--astral);
+}
+
+/*MAIN*/
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px
+}
+
+.main-text{
+    width: 50%;
+    color: #ffffff;
+
+}
+
+.main-text h1{
+    font-size: 3.5rem;
+    rem;
+}
+
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-img{
+    width: 30%;
+}
+
+.main-img img{
+    width: 100%;
 }
