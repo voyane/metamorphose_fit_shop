@@ -30,11 +30,74 @@ Willow Grove
 /*Selector universal*/
 *{
     margin: 0; /*margin é usado para definir o espaçamento externo entre um elemento e os elementos vizinhos*/
-    padding: 0;
-    box-sizing: border-box;
+    padding: 0; /*padding adiciona espaço entre o conteúdo do elemento (como texto ou imagem) e a borda interna do elemento */
+    box-sizing: border-box; /*box-sizing define como o tamanho total de um elemento (largura e altura) é calculado, considerando ou não as bordas (border) e o preenchimento interno(padding) no cálculo.*/
+    text-decoration: none;
+    list-style: none; /*retira os pontos ou numeros das listas ordenadas*/
 }
 
 body{
-    background-color: #7c7c76;
     font-family: 'Times New Roman', Times, serif;
+}
+
+:root{ /*:root é uma pseudo-classe que representa o elemento raiz de um documento HTML. Geralmente, o elemento raiz é o <html>. Ele é especialmente útil para definir variáveis CSS de forma global.*/
+    --preta: #000000;
+    --nine-shaft: #222020;
+    --di-serria: #e19467;
+    --astral: #3277a9;
+    --glacier: #71a1c1;
+    --black: #050505;
+    --westar: #dfdcd9;
+    --friar-gray: #7c7c76;
+    --boulder: #797474;
+    --iron: #d0d5d5;
+    --blue-dianne: #274b57;
+    --storm-dust: #5f605d;
+    --willow-grove: #6b6e69;
+}
+
+.background-glacier{
+    background: var(--glacier);
+}
+
+/*Classe reutilizavel*/
+.container{ /*A classe vai delimitar os conteudos do site*/
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+.btn-gradiente{
+    padding: 10px 25px;
+    color: var(--astral);
+    border: none;
+    cursor: pointer;
+    background-image: var(--black);
+}
+
+/*Classes do site*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--iron);
+}
+
+.ul{
+    display: flex;
+    align-items: center; /*listas uma ao lado da outra*/
+}
+
+.ul li{
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.ul li a{
+    color: var(--astral);
 }
